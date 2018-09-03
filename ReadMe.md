@@ -4,7 +4,7 @@ The following document outlines how the task was achieved and how to run the pro
 
 Screenshot of toggl timer:
 
-[](https://image.ibb.co/jabe9e/Screen_Shot_2018_09_03_at_17_06_39.png)
+![](https://image.ibb.co/jabe9e/Screen_Shot_2018_09_03_at_17_06_39.png)
 
 ---- 
 
