@@ -6,15 +6,9 @@ class OfflineDatabase {
   data: Object
 
   constructor () {
-    this.data = {
-      users: {
-        id1: {
-          name: 'Tom'
-        }
-      }
-    }
+    this.path = ''
+    this.data = {}
   }
-
 
   /**
    * This function updates the current path
@@ -26,19 +20,11 @@ class OfflineDatabase {
   }
 
   push (obj: Object): String {
-    // Check if the current path already exists
-    // If it doesn't we create it under a new Id
-    if (!objectPath.has(this.data, this.path)) {
-      let newId = shortId.generate()
-      let expandedPath = `${this.path}.${newId}`
+    let newId = shortId.generate()
+    let expandedPath = `${this.path}.${newId}`
 
-      objectPath.set(this.data, expandedPath, obj)
-      return newId
-    }
-
-    // If the path already exists, we just update everything
-    // underneath it with the new object.
-    objectPath.set(this.data, this.path, obj)
+    objectPath.set(this.data, expandedPath, obj)
+    return newId
   }
 
   remove (): void {
