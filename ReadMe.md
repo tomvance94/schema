@@ -8,8 +8,7 @@ The following document outlines how the task was achieved and how to run the pro
 
 1. `npm run build`: This script will build the TypeScript to runnable Javascript
 2. `npm run start`: This will start up the project, and will run the `src/examples.ts` file.
-
-`npm run test`: This will run the associated unit tests.
+3. `npm run test`: This will run the associated unit tests.
 
 ----
 
