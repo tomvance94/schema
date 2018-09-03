@@ -18,3 +18,14 @@ how the OfflineDatabase class should be used the the type of parameters is will 
 ### examples.ts
 
 The examples file has a number of uses of the OfflineDatabase class to show it in action. This can be run as show above, or edited to test further use cases.
+
+----
+
+### 3rd Party Modules
+
+*objectPath*
+
+The main 3rd party module that is used within this project is the "ObjectPath" module. This was used as a simple way to play with deeply nested object, this saves the code from needed large amounts of existance checking.
+
+*shortId*
+This module was used to quickly generate unique id's when pushing new data into the database.
